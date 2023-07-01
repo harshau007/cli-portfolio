@@ -1,0 +1,35 @@
+name: CD Pipeline for vercel
+
+on:
+    push:
+        branches: 
+            - main
+    pull_request:
+      branches:
+        - main
+
+env:
+    VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+    VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+    Deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Setting Node
+              uses: actions/setup-node@v3
+              with:
+                node-version: '18'
+                cache: npm
+            - name: Installing Packages
+              run: npm install && npm install --global vercel@latest
+            - name: Running Test
+              run: npm run test:once
+            - name: Pulling Vercel ENV
+              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+            - name: Building Project
+              run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+            - name: Deploying to Vercel
+              run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

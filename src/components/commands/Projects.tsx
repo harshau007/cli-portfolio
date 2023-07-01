@@ -56,27 +56,15 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    title: "TCET-Shastra TeamsAPI",
+    desc: "A RESTful API developed for the TCET-Shastra Club.",
+    url: "https://github.com/harshau007/Shastra-TeamsAPI",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
-  },
-  {
-    id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
+    title: "SKYNET-HACKATHON-PROJECT",
+    desc: "An info website for James Webb Telescope",
+    url: "https://github.com/harshau007/SKYNET-HACKATHON-PROJECT",
   },
 ];
 

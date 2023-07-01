@@ -6,18 +6,18 @@ export type Themes = {
 
 const theme: Themes = {
   dark: {
-    id: "T_001",
-    name: "dark",
+    id: "T_003",
+    name: "blue-matrix",
     colors: {
-      body: "#1D2A35",
-      scrollHandle: "#19252E",
-      scrollHandleHover: "#162028",
-      primary: "#05CE91",
-      secondary: "#FF9D00",
+      body: "#101116",
+      scrollHandle: "#424242",
+      scrollHandleHover: "#616161",
+      primary: "#00ff9c",
+      secondary: "#60fdff",
       text: {
-        100: "#cbd5e1",
-        200: "#B2BDCC",
-        300: "#64748b",
+        100: "#ffffff",
+        200: "#c7c7c7",
+        300: "#76ff9f",
       },
     },
   },
@@ -37,8 +37,8 @@ const theme: Themes = {
       },
     },
   },
-  "blue-matrix": {
-    id: "T_003",
+  'blue-matrix': {
+    id: "T_070",
     name: "blue-matrix",
     colors: {
       body: "#101116",

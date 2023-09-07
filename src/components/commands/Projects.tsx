@@ -56,15 +56,15 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "TCET-Shastra TeamsAPI",
-    desc: "A RESTful API developed for the TCET-Shastra Club.",
-    url: "https://github.com/harshau007/Shastra-TeamsAPI",
+    title: "TCET-Linux",
+    desc: "TCET Linux is an open-source operating system providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines robust functionality with a user-friendly experience. Built from the ground up, TCET Linux boasts efficient performance, customization options, and a range of features tailored to meet the needs of both casual users and enthusiasts.",
+    url: "https://github.com/tcet-opensource/tcet-linux",
   },
   {
     id: 2,
-    title: "SKYNET-HACKATHON-PROJECT",
-    desc: "An info website for James Webb Telescope",
-    url: "https://github.com/harshau007/SKYNET-HACKATHON-PROJECT",
+    title: "TCET-Linux Welcome Application",
+    desc: "TCET Linux Welcome is a simple welcome app specifically written for TCET Linux but it can be used on Arch Linux and any Arch-based distributions.",
+    url: "https://github.com/tcet-opensource/tcet-linux-welcome",
   },
 ];
 
